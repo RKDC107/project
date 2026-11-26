@@ -4,14 +4,14 @@ public class Announcement {
     private String title;
     private String details;
     private String category;
-    private String author;
+    private String source;
     private String date;
 
     public Announcement(String title, String details, String category, String author, String date) {
         this.title = title;
         this.details = details;
         this.category = category;
-        this.author = author;
+        this.author = source;
         this.date = date;
     }
 
@@ -39,7 +39,7 @@ public class Announcement {
         this.category = category;
     }
 
-    public String getAuthor() {
+    public String getSource() {
         return author;
     }
 
@@ -49,7 +49,7 @@ public class Announcement {
 
     public void display() {
         System.out.println("=== [" + category + "] " + title + " ===");
-        System.out.println("Posted by: " + author + " | Date: " + date);
+        System.out.println("Posted by: " + source + " | Date: " + date);
         System.out.println(details);
     }
 } 
