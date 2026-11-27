@@ -50,3 +50,4 @@ public class Announcement {
         System.out.println("Details: " + details);
     }
 }
+
