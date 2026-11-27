@@ -106,7 +106,6 @@ public class Main {
         labDeadline.displayAnnouncement();
         System.out.println();
 
-        // Simple category check using if-else
         if (labDeadline.getCategory() == AnnouncementCategory.DEADLINE) {
             System.out.println("Reminder: Check due date -> " + labDeadline.getDueDate());
         } else {
