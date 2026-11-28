@@ -1,5 +1,8 @@
 public enum AnnouncementCategory {
-    EVENT,
-    DEADLINE,
-    FEES
+   EVENT,
+   DEADLINE,
+   FEES;
+
+   private AnnouncementCategory() {
+   }
 }
