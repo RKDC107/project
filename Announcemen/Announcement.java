@@ -1,52 +1,52 @@
 public class Announcement {
-    private String title;
-    protected AnnouncementCategory category;
-    private String details;
-    private String datePosted;
+   private String title;
+   protected AnnouncementCategory category;
+   private String details;
+   private String datePosted;
 
-    public Announcement(String title, AnnouncementCategory category, String details, String datePosted) {
-        this.title = title;
-        this.category = category;
-        this.details = details;
-        this.datePosted = datePosted;
-    }
+   public Announcement(String var1, AnnouncementCategory var2, String var3, String var4) {
+      this.title = var1;
+      this.category = var2;
+      this.details = var3;
+      this.datePosted = var4;
+   }
 
-    public String getTitle() {
-        return title;
-    }
+   public String getTitle() {
+      return this.title;
+   }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
+   public void setTitle(String var1) {
+      this.title = var1;
+   }
 
-    public AnnouncementCategory getCategory() {
-        return category;
-    }
+   public AnnouncementCategory getCategory() {
+      return this.category;
+   }
 
-    public void setCategory(AnnouncementCategory category) {
-        this.category = category;
-    }
+   public void setCategory(AnnouncementCategory var1) {
+      this.category = var1;
+   }
 
-    public String getDetails() {
-        return details;
-    }
+   public String getDetails() {
+      return this.details;
+   }
 
-    public void setDetails(String details) {
-        this.details = details;
-    }
+   public void setDetails(String var1) {
+      this.details = var1;
+   }
 
-    public String getDatePosted() {
-        return datePosted;
-    }
+   public String getDatePosted() {
+      return this.datePosted;
+   }
 
-    public void setDatePosted(String datePosted) {
-        this.datePosted = datePosted;
-    }
+   public void setDatePosted(String var1) {
+      this.datePosted = var1;
+   }
 
-    public void displayAnnouncement() {
-        System.out.println("Title: " + title);
-        System.out.println("Category: " + category);
-        System.out.println("Date Posted: " + datePosted);
-        System.out.println("Details: " + details);
-    }
+   public void displayAnnouncement() {
+      System.out.println("Title: " + this.title);
+      System.out.println("Category: " + String.valueOf(this.category));
+      System.out.println("Date Posted: " + this.datePosted);
+      System.out.println("Details: " + this.details);
+   }
 }
